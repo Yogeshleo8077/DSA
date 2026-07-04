@@ -4,12 +4,15 @@ import java.util.HashSet;
 
 public class MissingNumberMoreOne {
     public static List<Integer> missingNumbers(int arr[], int n) {
+
+        // Keep set for elements
         HashSet<Integer> present = new HashSet<>();
 
         for (int num : arr) {
             present.add(num);
         }
 
+        // Keep a list for missing elements
         List<Integer> missing = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
